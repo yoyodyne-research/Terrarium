@@ -12,10 +12,6 @@ chorus: build
 	- rm -rf build/$@
 	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
 
-delay: build
-	- rm -rf build/$@
-	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
-
 passthru: build
 	- rm -rf build/$@
 	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
